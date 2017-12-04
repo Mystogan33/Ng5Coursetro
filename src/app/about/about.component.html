@@ -1,0 +1,18 @@
+<p>
+  Oww! It seems that you lost your way...😢
+</p>
+
+<input type="submit" class="btn" value="Please take me home !" (click)="sendMeHome()">
+<input type="submit" class="btn" value="I'm here for the private room !" (click)="sendMeToThePrivatePage()">
+
+
+<p>
+  But don't forget your goals ! Here's a reminder :
+</p>
+
+<div class="container color-light">
+<div class="col">
+  <p class="life-container" *ngFor="let goal of goals; let i = index" (click)="removeItem(i)">
+    {{goal}}
+  </p>
+</div>
