@@ -13,18 +13,23 @@ import { ThirdComponentComponent } from './third-component/third-component.compo
 
 import { DataService } from './data.service';
 
+import { MaterializeModule } from 'angular2-materialize';
+import { MainHomeComponent } from './main-home/main-home.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    ThirdComponentComponent
+    ThirdComponentComponent,
+    MainHomeComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MaterializeModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

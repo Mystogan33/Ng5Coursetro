@@ -1,6 +1,8 @@
 .container {
+  margin-top: 10px;
   display: grid;
   grid-template-columns: 50% auto;
+  width: auto;
 }
 
 .col {
@@ -16,18 +18,24 @@
 }
 
 input.txt {
-  borders: 0;
-  padding: 1em 3em;
-  color: #003A61;
-  margin-bottom: 1em;
-  cursor: pointer;
+  // borders: 0;
+  // padding: 1em 3em;
+  background-color: white;
+  color: #2885C4;
+  text-align: center;
+  // margin-bottom: 1em;
+  // cursor: pointer;
   border-radius: 20px;
-  border: none;
+  //border: none;
+}
+
+::placeholder {
+  color: #2885C4;
+  padding-left: 10px;
 }
 
 input.btn {
     border: 0;
-    padding:1em 3em;
     background:#A5F883;
     color:#003A61;
     border-radius: 20px;
